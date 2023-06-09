@@ -179,7 +179,8 @@ main #slider .info-inner {
 main #slider .info-inner .info {
   width: 100%;
 }
-main #slider .info-inner .info i, main #slider .info-inner .info span {
+main #slider .info-inner .info i,
+main #slider .info-inner .info span {
   color: #ff497c;
   margin-left: 10px;
   font-size: 18px;
@@ -270,11 +271,113 @@ main #category-products .section-title {
   padding-left: 5%;
   margin-bottom: 3%;
 }
-main #category-products .section-title i, main #category-products .section-title span {
+main #category-products .section-title i,
+main #category-products .section-title span {
   margin-left: 6px;
   color: #8c71db;
   font-size: 18px;
 }
 main #category-products .section-title span {
   font-weight: 500;
+}
+main #category-products .custom-container {
+  margin-bottom: 30px;
+}
+main #category-products .custom-container .items div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+main #category-products .custom-container .items div img {
+  transition: 0.5s;
+  width: 45%;
+  height: 50%;
+}
+main #category-products .custom-container .items div img:hover {
+  transform: scale(1.1);
+}
+main #category-products .products-main .show-more {
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+main #category-products .products-main .show-more:hover {
+  transform: scale(1.1);
+}
+main #category-products .products-main div div {
+  margin-bottom: 10px;
+}
+main #category-products .products-main div div .card-inner {
+  border-radius: 23px;
+  overflow: hidden;
+  height: 400px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
+}
+main #category-products .products-main div div .card-inner div {
+  height: 65%;
+  margin-bottom: 20px;
+}
+main #category-products .products-main div div .card-inner div img {
+  width: 100%;
+  height: 100%;
+}
+main #category-products .products-main div div .card-inner .prod-desc {
+  padding-left: 20px;
+}
+main #category-products .products-main div div .card-inner .prod-desc p {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 2px;
+}
+main #category-products .products-main div div .card-inner .prod-desc span {
+  font-weight: 500;
+  font-size: 20px;
+}
+main #category-products .products-main div div .card-inner .prod-desc .price {
+  color: green !important;
+}
+main #category-products .products-main div div .card-inner .prod-desc span del.old-price {
+  color: rgb(164, 164, 164);
+}
+main #category-products .products-main div div .card-inner .prod-desc .buttons {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+main #category-products .products-main div div .card-inner .prod-desc .buttons button:nth-child(1) {
+  background-color: #49b3ff;
+  border: 0.1px solid #49b3ff;
+}
+main #category-products .products-main div div .card-inner .prod-desc .buttons button:nth-child(1):hover {
+  background-color: white;
+  color: #49b3ff;
+}
+main #category-products .products-main div div .card-inner .prod-desc .buttons button:nth-child(2) {
+  background-color: #8c71db;
+  border: 0.1px solid #8c71db;
+}
+main #category-products .products-main div div .card-inner .prod-desc .buttons button:nth-child(2):hover {
+  background-color: white;
+  color: #8c71db;
+}
+main #category-products .products-main div div .card-inner .prod-desc button:nth-child(3) {
+  background-color: #ff497c;
+  border: 0.1px solid #ff497c;
+}
+main #category-products .products-main div div .card-inner .prod-desc button:nth-child(3):hover {
+  background-color: white;
+  color: #ff497c;
+}
+main #category-products .products-main div div .card-inner button {
+  padding: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+main #category-products .products-main div div .card-inner button:focus {
+  outline: none;
 }/*# sourceMappingURL=main.css.map */

@@ -1,134 +1,248 @@
+// *{
+//     border: 1px solid red;
+// }
+main {
+  #slider {
+    background-color: $bg-slider-color;
+    .info-inner {
+      min-height: 450px;
+      max-height: 470px;
+      overflow: hidden;
+      padding-top: 6%;
+      padding-left: 30%;
+      .info {
+        width: 100%;
 
-main{
-    #slider{
-        background-color: $bg-slider-color;
-       .info-inner{
-        min-height: 450px;
-        max-height: 470px;
-        overflow: hidden;
-        padding-top:6% ;
-        padding-left: 30%;
-        .info{
-            width: 100%;
-            
-            i,span{
-                color:$pink-color;
-                margin-left: 10px;
-                font-size: 18px;
-                
-            }
-            span{
-                font-weight: 500;
-            }
+        i,
+        span {
+          color: $pink-color;
+          margin-left: 10px;
+          font-size: 18px;
         }
-        .title-slider{
-            h1{
-                font-size: 50px;
-            }
+        span {
+          font-weight: 500;
         }
-        .shop-btn{
-            padding-left: 8%;
-            .btn-white{
-            
-                padding: 20px;
-                background-color: $white-color;
-                box-shadow: $shadow-color;
-                transition: 0.5s ease-in-out;
-                i{
-                    margin-right: 20px;
-                }
-                span{
-                    font-weight: 500;
-                }
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
+      }
+      .title-slider {
+        h1 {
+          font-size: 50px;
         }
-        
-        div{
-            margin-top: 30px;
-        }
-       }
-      
-       .slide-image{
-        overflow: hidden;
-        position: relative; 
-        display: flex;
-        .inner-slide:nth-child(1){
-            width: 60%;
-        }
-        .inner-slide:nth-child(2){
-            width: 40%;
-        }
-        .inner-slide:nth-child(1){
-            position: relative;
-            height: 450px;
-            width: 100%;
-            img{
-               
-              
-                position: absolute;
-            }
-            img:first-child{
-                width: 60%;
-                height: 130%;
-            }
-           
-            img:nth-child(3){
-                right: 2%;
-               
-                width: 30%;
-                height: 100%;
-            }
-           
-        }
-       }
-       .first-slider-img{
-        img:nth-child(4){
-            right: 3%;
-            bottom: 10%;
-            width: 45%;
-            height: 45%;
-        }
-        img:nth-child(2){
-            left: 2%;
-            top: 10%;
-            width: 65%;
-            height: 85%;
-        }
-       }
-       .second-slider-img{
-       .inner-slide{
-        img:nth-child(4){
-            right: 5%;
-            bottom: 10%;
-            width: 35%;
-            height: 47%;
-        }
-        img:nth-child(2){
-            left: -5%;
-            top: 10%;
-            width: 70%;
-            height: 75%;
-        }
-       }
-       }
-}
-#category-products{
-    padding: 3%;
-    .section-title{
-padding-left: 5%;
-margin-bottom: 3%;
-        i,span{
-            margin-left: 6px;
-            color:$soft-purple-color ;
-            font-size: 18px;
-           
-        }
-        span{
+      }
+      .shop-btn {
+        padding-left: 8%;
+        .btn-white {
+          padding: 20px;
+          background-color: $white-color;
+          box-shadow: $shadow-color;
+          transition: 0.5s ease-in-out;
+          i {
+            margin-right: 20px;
+          }
+          span {
             font-weight: 500;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
         }
+      }
+
+      div {
+        margin-top: 30px;
+      }
     }
-}
-}
+
+    .slide-image {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      .inner-slide:nth-child(1) {
+        width: 60%;
+      }
+      .inner-slide:nth-child(2) {
+        width: 40%;
+      }
+      .inner-slide:nth-child(1) {
+        position: relative;
+        height: 450px;
+        width: 100%;
+        img {
+          position: absolute;
+        }
+        img:first-child {
+          width: 60%;
+          height: 130%;
+        }
+
+        img:nth-child(3) {
+          right: 2%;
+
+          width: 30%;
+          height: 100%;
+        }
+      }
+    }
+    .first-slider-img {
+      img:nth-child(4) {
+        right: 3%;
+        bottom: 10%;
+        width: 45%;
+        height: 45%;
+      }
+      img:nth-child(2) {
+        left: 2%;
+        top: 10%;
+        width: 65%;
+        height: 85%;
+      }
+    }
+    .second-slider-img {
+      .inner-slide {
+        img:nth-child(4) {
+          right: 5%;
+          bottom: 10%;
+          width: 35%;
+          height: 47%;
+        }
+        img:nth-child(2) {
+          left: -5%;
+          top: 10%;
+          width: 70%;
+          height: 75%;
+        }
+      }
+    }
+  }
+  #category-products {
+    padding: 3%;
+    .section-title {
+      padding-left: 5%;
+      margin-bottom: 3%;
+      i,
+      span {
+        margin-left: 6px;
+        color: $soft-purple-color;
+        font-size: 18px;
+      }
+      span {
+        font-weight: 500;
+      }
+    }
+    .custom-container {
+      margin-bottom: 30px;
+      .items {
+        div {
+          display: flex;
+
+          flex-direction: column;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding-top: 10px;
+          img {
+            transition: 0.5s;
+            width: 45%;
+            height: 50%;
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+    .products-main {
+        .show-more{
+            display: flex;
+            justify-content: center;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        div{
+            div{
+                margin-bottom: 10px;
+                .card-inner {
+                    border-radius: 23px;
+                    overflow: hidden;
+                    height: 400px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
+            
+                    div {
+                      height: 65%;
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                      margin-bottom: 20px;
+                    }
+                    .prod-desc {
+                      padding-left: 20px;
+                      p {
+                        font-size: 20px;
+                        color: $gray-color;
+                        margin-bottom: 2px;
+                      }
+                      span {
+                        font-weight: 500;
+                        font-size: 20px;
+                      }
+                      .price {
+                        color: $green-color !important;
+                      }
+                      span {
+                        del.old-price {
+                          color: $soft-gray-color;
+                        }
+                      }
+                      .buttons {
+                        margin: 0 auto;
+                        margin-top: 5px;
+                        button:nth-child(1) {
+                          background-color: $blue-color;
+                          border:0.1px solid  $blue-color;
+                          &:hover{
+                            background-color: $white-color;
+                           
+                            color:$blue-color
+                          }
+                        }
+                        button:nth-child(2) {
+                          background-color: $soft-purple-color;
+                          border:0.1px solid  $soft-purple-color;
+                          &:hover{
+                            background-color: $white-color;
+                            
+                            color:$soft-purple-color;
+                          }
+                        }
+                      }
+                      button:nth-child(3) {
+                        background-color: $pink-color;
+                        border:0.1px solid  $pink-color;
+                        &:hover{
+                          background-color: $white-color;
+                          
+                          color:$pink-color
+                        }
+                      }
+                    }
+                      button {
+                        padding: 8px;
+                        transition: 0.5s;
+                        cursor: pointer;
+                        color: $white-color;
+                        border-radius: 5px;
+                        &:focus {
+                          outline: none;
+                        }
+                       
+                      }
+                    }
+            }
+        }
+    
+      }
+    }
+  }
