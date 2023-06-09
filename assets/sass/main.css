@@ -166,6 +166,15 @@ header nav .header-section ul .hover-underline-animation:hover::after {
     display: flex !important;
   }
 }
+* {
+  border: 0.1px solid transparent;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 main #slider {
   background-color: #f9f3f0;
 }
@@ -332,7 +341,8 @@ main #category-products .products-main div div .card-inner div img {
   width: 100%;
   height: 100%;
 }
-main #category-products .products-main div div .card-inner .prod-desc p, main #category-products .products-main div div .card-inner .prod-desc span {
+main #category-products .products-main div div .card-inner .prod-desc p,
+main #category-products .products-main div div .card-inner .prod-desc span {
   margin-left: 20px;
 }
 main #category-products .products-main div div .card-inner .prod-desc p {
@@ -392,6 +402,107 @@ main #category-products .products-main div div .card-inner button {
 main #category-products .products-main div div .card-inner button:focus {
   outline: none;
 }
+main #headphone-poster .headphone-inner {
+  position: relative;
+}
+main #headphone-poster .headphone-inner .headphone-bg {
+  background-color: #f6f7fb;
+  min-height: 300px;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp {
+  padding: 60px;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp .minutes {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 17px;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp .minutes div.minutes-inner {
+  background-color: white;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp .minutes div.minutes-inner p:nth-child(1) {
+  margin-top: 15px;
+  font-size: 19px;
+  font-weight: 500;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp p i,
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp p span {
+  color: #ff497c;
+  font-size: 18px;
+  margin-left: 10px;
+}
+main #headphone-poster .headphone-inner .headphone-bg .text-hdp p span {
+  font-weight: 500;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp {
+  position: relative;
+  height: 100%;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp img {
+  width: 73%;
+  height: 100%;
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals-main {
+  overflow: hidden;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals {
+  width: 60%;
+  height: 70%;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 35%;
+  right: 6%;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals div {
+  border-radius: 50%;
+  border-left: 2px solid #49b3ff;
+  transition: 0.7s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: signalChanger;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals .signal1 {
+  width: 40%;
+  height: 45%;
+  animation-delay: 1.8s;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals .signal1 .signal2 {
+  width: 80%;
+  height: 80%;
+  animation-delay: 1.6s;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals .signal1 .signal2 .signal3 {
+  width: 80%;
+  height: 80%;
+  animation-delay: 1.4s;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals .signal1 .signal2 .signal3 .signal4 {
+  width: 80%;
+  height: 80%;
+  animation-delay: 1.2s;
+}
+main #headphone-poster .headphone-inner .headphone-bg .poster-hdp .signals .signal1 .signal2 .signal3 .signal4 .signal5 {
+  width: 80%;
+  height: 80%;
+  animation-delay: 1s;
+}
 
 .filterDiv {
   display: none;
@@ -403,4 +514,25 @@ main #category-products .products-main div div .card-inner button:focus {
 
 .category-btn.active {
   border: 1px solid #49b3ff !important;
+}
+
+@keyframes signalChanger {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+  .hadphones-cols {
+    display: none !important;
+  }
+  .minutes-inner {
+    width: 60%;
+    height: 100%;
+  }
+  .minutes-inner p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,11 @@
-// *{
-//     border: 1px solid red;
-// }
+* {
+  border: 0.1px solid transparent;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   #slider {
     background-color: $bg-slider-color;
     .info-inner {
@@ -152,114 +156,228 @@ main {
       }
     }
     .products-main {
-        .show-more{
-            display: flex;
-            justify-content: center;
-            transition: 0.5s;
-            &:hover{
-                transform: scale(1.1);
-            }
+      .show-more {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1);
         }
-        div{
-            div{
-                margin-bottom: 10px;
-                .card-inner {
-                    border-radius: 23px;
-                    overflow: hidden;
-                    height: 400px;
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
-                    
-            &:hover{
-              div{
+      }
+      div {
+        div {
+          margin-bottom: 10px;
+          .card-inner {
+            border-radius: 23px;
+            overflow: hidden;
+            height: 400px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
+
+            &:hover {
+              div {
                 overflow: hidden;
-                img{transform: scale(1.1);}
+                img {
+                  transform: scale(1.1);
+                }
               }
             }
-                    div {
-                      height: 65%;
-                      img {
-                        transition: 0.5s;
-                        width: 100%;
-                        height: 100%;
-                      }
-                      margin-bottom: 20px;
-                    }
-                    .prod-desc {
-                     p,span{
-                      margin-left: 20px;
-                     }
-                      p {
-                        font-size: 20px;
-                        color: $gray-color;
-                        margin-bottom: 2px;
-                      }
-                      span {
-                        font-weight: 500;
-                        font-size: 20px;
-                      }
-                      .price {
-                        color: $green-color !important;
-                      }
-                      span {
-                        del.old-price {
-                          color: $soft-gray-color;
-                        }
-                      }
-                      .buttons {
-                        height: fit-content;
-                        display: flex;
-                        justify-content: space-around;
-                        margin: 8px auto;
-                        margin-top: 5px;
-                        button:nth-child(1) {
-                          background-color: $blue-color;
-                          border:0.1px solid  $blue-color;
-                          &:hover{
-                            background-color: $white-color;
-                           
-                            color:$blue-color
-                          }
-                        }
-                        button:nth-child(2) {
-                          background-color: $soft-purple-color;
-                          border:0.1px solid  $soft-purple-color;
-                          &:hover{
-                            background-color: $white-color;
-                            
-                            color:$soft-purple-color;
-                          }
-                        }
-                      }
-                      button:nth-child(3) {
-                        background-color: $pink-color;
-                        border:0.1px solid  $pink-color;
-                        &:hover{
-                          background-color: $white-color;
-                          
-                          color:$pink-color
-                        }
-                      }
-                    }
-                      button {
-
-                       padding: 10px 15px;
-                        transition: 0.5s;
-                        cursor: pointer;
-                        color: $white-color;
-                        border-radius: 5px;
-                        &:focus {
-                          outline: none;
-                        }
-                       
-                      }
-                    }
+            div {
+              height: 65%;
+              img {
+                transition: 0.5s;
+                width: 100%;
+                height: 100%;
+              }
+              margin-bottom: 20px;
             }
+            .prod-desc {
+              p,
+              span {
+                margin-left: 20px;
+              }
+              p {
+                font-size: 20px;
+                color: $gray-color;
+                margin-bottom: 2px;
+              }
+              span {
+                font-weight: 500;
+                font-size: 20px;
+              }
+              .price {
+                color: $green-color !important;
+              }
+              span {
+                del.old-price {
+                  color: $soft-gray-color;
+                }
+              }
+              .buttons {
+                height: fit-content;
+                display: flex;
+                justify-content: space-around;
+                margin: 8px auto;
+                margin-top: 5px;
+                button:nth-child(1) {
+                  background-color: $blue-color;
+                  border: 0.1px solid $blue-color;
+                  &:hover {
+                    background-color: $white-color;
+
+                    color: $blue-color;
+                  }
+                }
+                button:nth-child(2) {
+                  background-color: $soft-purple-color;
+                  border: 0.1px solid $soft-purple-color;
+                  &:hover {
+                    background-color: $white-color;
+
+                    color: $soft-purple-color;
+                  }
+                }
+              }
+              button:nth-child(3) {
+                background-color: $pink-color;
+                border: 0.1px solid $pink-color;
+                &:hover {
+                  background-color: $white-color;
+
+                  color: $pink-color;
+                }
+              }
+            }
+            button {
+              padding: 10px 15px;
+              transition: 0.5s;
+              cursor: pointer;
+              color: $white-color;
+              border-radius: 5px;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
         }
-    
       }
     }
   }
-.filterDiv{
+  #headphone-poster {
+    
+    .headphone-inner {
+      position: relative;
+      .headphone-bg {
+       
+        background-color: #f6f7fb;
+        min-height: 300px;
+        .text-hdp {
+          padding: 60px;
+          .minutes {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            gap: 17px;
+            div.minutes-inner {
+              background-color: white;
+              width: 100%;
+
+              border-radius: 50%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              p:nth-child(1) {
+                margin-top: 15px;
+                font-size: 19px;
+                font-weight: 500;
+              }
+            }
+          }
+          h2 {
+            font-size: 50px;
+            font-weight: 600;
+          }
+          p {
+            i,
+            span {
+              color: $pink-color;
+              font-size: 18px;
+              margin-left: 10px;
+            }
+            span {
+              font-weight: 500;
+            }
+          }
+        }
+        .poster-hdp {
+          position: relative;
+          height: 100%;
+          
+          img {
+            width: 73%;
+            height: 100%;
+            position: absolute;
+            right: 20%;
+            bottom: 25%;
+          }
+          .signals-main{
+          
+            overflow: hidden;
+          }
+          .signals {
+            
+            width: 60%;
+            height: 70%;
+            transform: rotate(30deg);
+            position: absolute;
+            top: 35%;
+            right: 6%;
+            
+            div {
+              
+              border-radius: 50%;
+              border-left: 2px solid $blue-color;
+              transition: 0.7s ease;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              animation-name: signalChanger;
+              animation-duration: 4s;
+              animation-iteration-count: infinite;
+            }
+            .signal1 {
+              width: 40%;
+              height: 45%;
+              animation-delay: 1.8s;
+              .signal2 {
+                width: 80%;
+                height: 80%;
+                animation-delay: 1.6s;
+                .signal3 {
+                  width: 80%;
+                  height: 80%;
+                  animation-delay: 1.4s;
+                  .signal4 {
+                    width: 80%;
+                    height: 80%;
+                    animation-delay: 1.2s;
+                    .signal5 {
+                      width: 80%;
+                      height: 80%;
+                      animation-delay: 1s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.filterDiv {
   display: none;
 }
 .show {
@@ -267,5 +385,25 @@ main {
 }
 .category-btn.active {
   border: 1px solid $blue-color !important;
- 
+}
+@keyframes signalChanger {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+ .hadphones-cols{
+  display: none !important;
+ }
+ .minutes-inner{
+width: 60%;
+height: 100%;
+p{
+  font-size: 15px;
+}
+ }
 }
