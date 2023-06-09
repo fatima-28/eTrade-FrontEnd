@@ -168,17 +168,26 @@ main {
                     overflow: hidden;
                     height: 400px;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 4px;
-            
+                    
+            &:hover{
+              div{
+                overflow: hidden;
+                img{transform: scale(1.1);}
+              }
+            }
                     div {
                       height: 65%;
                       img {
+                        transition: 0.5s;
                         width: 100%;
                         height: 100%;
                       }
                       margin-bottom: 20px;
                     }
                     .prod-desc {
-                      padding-left: 20px;
+                     p,span{
+                      margin-left: 20px;
+                     }
                       p {
                         font-size: 20px;
                         color: $gray-color;
@@ -197,7 +206,10 @@ main {
                         }
                       }
                       .buttons {
-                        margin: 0 auto;
+                        height: fit-content;
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 8px auto;
                         margin-top: 5px;
                         button:nth-child(1) {
                           background-color: $blue-color;
@@ -229,7 +241,8 @@ main {
                       }
                     }
                       button {
-                        padding: 8px;
+
+                       padding: 10px 15px;
                         transition: 0.5s;
                         cursor: pointer;
                         color: $white-color;
@@ -246,3 +259,13 @@ main {
       }
     }
   }
+.filterDiv{
+  display: none;
+}
+.show {
+  display: block;
+}
+.category-btn.active {
+  border: 1px solid $blue-color !important;
+ 
+}
