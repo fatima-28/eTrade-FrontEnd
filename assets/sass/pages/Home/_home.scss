@@ -1,4 +1,117 @@
-.slider-box{
-    height: 300px;
- 
-}
+
+main{
+    #slider{
+        background-color: #f9f3f0;
+       .info-inner{
+        min-height: 450px;
+        max-height: 470px;
+        overflow: hidden;
+        padding-top:6% ;
+        padding-left: 30%;
+        .info{
+            width: 100%;
+            
+            i,span{
+                color:#ff497c;
+                margin-left: 10px;
+                font-size: 18px;
+                
+            }
+            span{
+                font-weight: 500;
+            }
+        }
+        .title-slider{
+            h1{
+                font-size: 50px;
+            }
+        }
+        .shop-btn{
+            padding-left: 8%;
+            .btn-white{
+            
+                padding: 20px;
+                background-color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transition: 0.5s ease-in-out;
+                i{
+                    margin-right: 20px;
+                }
+                span{
+                    font-weight: 500;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        
+        div{
+            margin-top: 30px;
+        }
+       }
+      
+       .slide-image{
+        overflow: hidden;
+        position: relative; 
+        display: flex;
+        .inner-slide:nth-child(1){
+            width: 60%;
+        }
+        .inner-slide:nth-child(2){
+            width: 40%;
+        }
+        .inner-slide:nth-child(1){
+            position: relative;
+            height: 450px;
+            width: 100%;
+            img{
+               
+              
+                position: absolute;
+            }
+            img:first-child{
+                width: 60%;
+                height: 130%;
+            }
+           
+            img:nth-child(3){
+                right: 2%;
+               
+                width: 30%;
+                height: 100%;
+            }
+           
+        }
+       }
+       .first-slider-img{
+        img:nth-child(4){
+            right: 3%;
+            bottom: 10%;
+            width: 45%;
+            height: 45%;
+        }
+        img:nth-child(2){
+            left: 2%;
+            top: 10%;
+            width: 65%;
+            height: 85%;
+        }
+       }
+       .second-slider-img{
+       .inner-slide{
+        img:nth-child(4){
+            right: 5%;
+            bottom: 10%;
+            width: 35%;
+            height: 47%;
+        }
+        img:nth-child(2){
+            left: -5%;
+            top: 10%;
+            width: 70%;
+            height: 75%;
+        }
+       }
+       }
+}}

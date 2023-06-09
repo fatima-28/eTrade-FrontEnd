@@ -17,7 +17,6 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
- 
 
     <link rel="stylesheet" href="./assets/sass/main.css" />
     <title>Home</title>
@@ -64,11 +63,20 @@
             <div class="icons-inner circle circle-item">
               <i class="fa-solid fa-heart"></i>
             </div>
-            <div class="icons-inner circle circle-item ">
+            <div class="icons-inner circle circle-item">
               <i class="fa-solid fa-user"></i>
             </div>
-           
-            <div class="icons-inner circle bars">
+            <div id="myNav" class="overlay">
+              <i class="fa-solid fa-x closebtn" onclick="closeNav()"></i>
+
+              <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+            <div class="icons-inner circle bars" onclick="openNav();">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
@@ -77,15 +85,77 @@
     </header>
 
     <main>
-      <section id="slider" class="movable-elements-wrapper" >
+      <section id="slider" class="movable-elements-wrapper">
         <swiper-container>
+          <swiper-slide>
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 slider-summary">
+                <div class="info-inner">
+                  <div class="info">
+                    <i class="fa-solid fa-fire fire-icon"></i>
+                    <span>Hot Deat In Thid Week</span>
+                  </div>
+                  <div class="title-slider">
+                    <h1>Roco Wireless Headphone</h1>
+                  </div>
+                  <div class="shop-btn">
+                    <a class="btn btn-white">
+                      <i class="fa-solid fa-cart-shopping"></i
+                      ><span>Shop Now</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="slide-image first-slider-img">
+                  <div class="slide-right-side inner-slide ">
+                    <img src="./assets/images/Home/shape-1.png" alt="image">
+                    <img src="./assets/images/Home/product-headphone.png" class="two element movable" data-value="4" alt="image">
+                    <img src="./assets/images/Home/shape-2.png" alt="image">
+                    <img src="./assets/images/Home/product-watch.png" class="three element movable" data-value="-1" alt="image">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
           <swiper-slide >
-            <div class="slider-box">
-              <button data-value="8" class="two element movable btn-success" >hello js</button>
-            </div> </swiper-slide>
-          <swiper-slide class="slider-box">Slide 2</swiper-slide>
-         
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 slider-summary">
+                <div class="info-inner">
+                  <div class="info">
+                    <i class="fa-solid fa-fire fire-icon"></i>
+                    <span>Hot Deat In Thid Week</span>
+                  </div>
+                  <div class="title-slider">
+                    <h1>Roco Wireless Headphone</h1>
+                  </div>
+                  <div class="shop-btn">
+                    <a class="btn btn-white">
+                      <i class="fa-solid fa-cart-shopping"></i
+                      ><span>Shop Now</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="slide-image second-slider-img">
+                  <div class="slide-right-side inner-slide ">
+                    <img src="./assets/images/Home/shape-1.png" alt="image">
+                    <img src="./assets/images/Home/product-watch.png" class="two element movable" data-value="4" alt="image">
+                    <img src="./assets/images/Home/shape-2.png" alt="image">
+                    <img src="./assets/images/Home/product-headphone.png" class="three element movable" data-value="-2" alt="image">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+             </swiper-slide>
         </swiper-container>
+      </section>
+      <section id="category-products">
+        
       </section>
     </main>
 
@@ -97,7 +167,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="./assets/plugins/movable-elements-wrapper/move.js"></script>

@@ -1,5 +1,5 @@
 var elem = document.querySelector("header");
-var scrollTrigger = 2960;
+var scrollTrigger = 230;
 window.onscroll = ScrollHandlerForHeader;
 function ScrollHandlerForHeader() {
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
@@ -9,4 +9,11 @@ function ScrollHandlerForHeader() {
          elem.classList.add("pad-2");
     }
 }
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 
