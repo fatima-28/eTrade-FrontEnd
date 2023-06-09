@@ -262,4 +262,19 @@ main #slider .second-slider-img .inner-slide img:nth-child(2) {
   top: 10%;
   width: 70%;
   height: 75%;
+}
+main #category-products {
+  padding: 3%;
+}
+main #category-products .section-title {
+  padding-left: 5%;
+  margin-bottom: 3%;
+}
+main #category-products .section-title i, main #category-products .section-title span {
+  margin-left: 6px;
+  color: #8c71db;
+  font-size: 18px;
+}
+main #category-products .section-title span {
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

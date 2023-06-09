@@ -17,7 +17,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
+    <link href="./assets/plugins/google-scrolling-carousel/jquery.gScrollingCarousel.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/sass/main.css" />
     <title>Home</title>
   </head>
@@ -110,9 +110,9 @@
                 <div class="slide-image first-slider-img">
                   <div class="slide-right-side inner-slide ">
                     <img src="./assets/images/Home/shape-1.png" alt="image">
-                    <img src="./assets/images/Home/product-headphone.png" class="two element movable" data-value="4" alt="image">
+                    <img src="./assets/images/Home/product-headphone.png" class="two element movable" data-value="6" alt="image">
                     <img src="./assets/images/Home/shape-2.png" alt="image">
-                    <img src="./assets/images/Home/product-watch.png" class="three element movable" data-value="-1" alt="image">
+                    <img src="./assets/images/Home/product-watch.png" class="three element movable" data-value="-3" alt="image">
                   </div>
 
                 </div>
@@ -155,7 +155,32 @@
         </swiper-container>
       </section>
       <section id="category-products">
-        
+        <div class="section-title">
+          <i class="fa-solid fa-tags"></i>
+          <span>Categories and Products</span>
+          <h2>Browse by Category</h2>
+        </div>
+       
+        <div class="custom-container">
+          <div>
+             <div class="g-scrolling-carousel carousel">
+              <div class="items">
+      
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+             <div>  </div>
+                   </div>
+            </div>
+          </div>
+         
+        </div>
       </section>
     </main>
 
@@ -176,6 +201,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="./assets/plugins/movable-elements-wrapper/move.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>  -->
+    <script src="./assets/plugins/google-scrolling-carousel/jquery.gScrollingCarousel.js"></script> 
     <script src="./assets/js/home.js"></script>
   </body>
 </html>

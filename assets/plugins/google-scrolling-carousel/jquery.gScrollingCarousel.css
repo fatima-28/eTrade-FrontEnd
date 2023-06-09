@@ -1,0 +1,92 @@
+.g-scrolling-carousel {
+    position: relative;
+}
+.g-scrolling-carousel .items {
+    display:flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.g-scrolling-carousel .items > *{
+    min-height: 144px;
+    display:block;
+    min-width:144px;
+    user-select: none;
+}
+
+.jc-right,
+.jc-left {
+    width: 36px;
+    height: 36px;
+    color:#757575;
+    margin-bottom: auto;
+    margin-top:auto;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index:2;
+    opacity: 0.94;
+
+}
+.jc-right {
+    right:-18px;
+}
+.jc-left {
+    left:-18px;
+}
+
+.jc-right:hover,
+.jc-left:hover{
+    opacity: 0.98;
+}
+.jc-right:active,
+.jc-left:active{
+    background-color: rgba(245, 245, 245, 0.98);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 4px 8px 0 rgba(0,0,0,0.20);
+}
+.jc-right svg,
+.jc-left svg{
+    position: absolute;
+    left: 0;right: 0;bottom: 0;top: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    fill: #757575;
+}
+.jc-right:hover svg,
+.jc-left:hover svg{
+   fill: #000;
+}
+body{
+    padding: 5px 13px;
+}
+.custom-container {
+  width:90%;
+  margin: 0 auto;
+}
+.g-scrolling-carousel .items > div{
+  min-height:146px;
+  margin-right:15px;
+ border: 0.1px solid gray;
+ border-radius: 10px;
+ 
+}
+.g-scrolling-carousel .items > div img{
+    width: 100%;
+    height: 100%;
+}
+.g-scrolling-carousel .items a:last-child{
+  margin-right:0;
+}
+.carousel-three,.carousel-four {
+  width: 537px;
+}
+/* .g-scrolling-carousel .items{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */

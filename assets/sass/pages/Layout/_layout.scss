@@ -11,7 +11,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color:#00497d94;
+  background-color:$bars-color;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30%;
@@ -25,7 +25,7 @@
   justify-content: center;
   a{
     display: block;
-    color: white;
+    color: $white-color;
     font-size: 30px;
     font-weight: 500;
     text-decoration: none;
@@ -43,15 +43,15 @@
   right: 45px;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: $white-color;
 }
 
 .area {
-  background-color: #f9f3f0;
+  background-color: $bg-slider-color;
   height: 40px;
 }
 .pad-2 {
-  background-color: #f9f3f0;
+  background-color: $bg-slider-color;
 }
 
 header {
@@ -61,13 +61,13 @@ header {
   z-index: 3;
   top: 5px;
   nav {
-    background-color: white;
+    background-color: $white-color;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: $nav-shadow-color;
     width: 80%;
     .header-section {
       display: flex;
@@ -79,7 +79,7 @@ header {
           display: none;
         }
         .circle {
-          background-color: #49b3ff;
+          background-color: $blue-color;
           cursor: pointer;
           border-radius: 50%;
           width: 35px;
@@ -89,7 +89,7 @@ header {
           transition: 0.5s;
           align-items: center;
           i {
-            color: white;
+            color: $white-color;
             font-size: 15px;
             cursor: pointer;
           }
@@ -108,14 +108,14 @@ header {
           list-style: none;
           a {
             cursor: pointer;
-            color: black;
+            color: $black-color;
             text-decoration: none;
           }
         }
         .hover-underline-animation {
           display: inline-block;
           position: relative;
-          color: black;
+          color: $black-color;
         }
 
         .hover-underline-animation::after {
@@ -126,7 +126,7 @@ header {
           height: 2px;
           bottom: -3px;
           left: 0;
-          background-color: black;
+          background-color: $black-color;
           transform-origin: bottom right;
           transition: transform 0.25s ease-out;
         }
