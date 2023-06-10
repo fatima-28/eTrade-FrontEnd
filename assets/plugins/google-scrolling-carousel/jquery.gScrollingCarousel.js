@@ -10,7 +10,7 @@
         };
   
         options = $.extend(defaults, options);
-
+        // console.log(options);
         var supportsTouch = false;
         if ('ontouchstart' in window){
             supportsTouch = true;
@@ -69,6 +69,7 @@
         function getFirstElemWidth(carousel) {
           var firstElem = carousel.children(":first");
           var marginRight = parseInt(firstElem.css("marginRight"));
+          // console.log(firstElem.width() + marginRight);
           return firstElem.width() + marginRight;
         }
   

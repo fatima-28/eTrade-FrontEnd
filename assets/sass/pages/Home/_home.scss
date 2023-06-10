@@ -263,11 +263,9 @@ main {
     }
   }
   #headphone-poster {
-    
     .headphone-inner {
       position: relative;
       .headphone-bg {
-       
         background-color: #f6f7fb;
         min-height: 300px;
         .text-hdp {
@@ -312,7 +310,7 @@ main {
         .poster-hdp {
           position: relative;
           height: 100%;
-          
+
           img {
             width: 73%;
             height: 100%;
@@ -320,21 +318,18 @@ main {
             right: 20%;
             bottom: 25%;
           }
-          .signals-main{
-          
+          .signals-main {
             overflow: hidden;
           }
           .signals {
-            
             width: 60%;
             height: 70%;
             transform: rotate(30deg);
             position: absolute;
             top: 35%;
             right: 6%;
-            
+
             div {
-              
               border-radius: 50%;
               border-left: 2px solid $blue-color;
               transition: 0.7s ease;
@@ -377,59 +372,155 @@ main {
     }
   }
 
-  #testimonials{
-    .testimonials-bg{
+  #testimonials {
+    .testimonials-bg {
       overflow: hidden;
       background-color: $soft-pink-color;
       min-height: 400px;
       padding: 5%;
-      .option{
+      .option {
         background-color: $white-color;
-       padding: 15px;
-       text-align: start;
-       margin-bottom: 2rem;
-       margin-top: 2rem;
+        padding: 15px;
+        text-align: start;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
       }
-      div{
-        p{
+      div {
+        p {
           margin-bottom: 0;
         }
-        img{
+        img {
           width: 100%;
           height: 100%;
           border-radius: 6px;
         }
-        p.profession:nth-child(1){
-color: $gray-color;
-font-size: 13px;
+        p.profession:nth-child(1) {
+          color: $gray-color;
+          font-size: 13px;
         }
-        p:nth-child(2){
+        p:nth-child(2) {
           font-weight: 500;
           font-size: 20px;
           letter-spacing: 1px;
           text-transform: capitalize;
-                  }
+        }
       }
     }
   }
+//   #most-sold {
+//     .most-sold-inner {
+//       max-height: 300px;
+     
+//       .center-text {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//       }
+//       .sold-inner {
+//         margin-top: 5%;
+
+//         border: 0.1px solid rgba(128, 128, 128, 0.747);
+//         border-radius: 7px;
+//         padding: 30px;
+//         .sold-buttons {
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+//           justify-content: center;
+//           gap: 10px;
+//         }
+
+//         .inner-main-sold {
+//           display: flex;
+//         div:nth-child(3){
+// margin-left: 40%;
+//         }
+         
+//         }
+
+//         .sold-img {
+//           width: 125px;
+//           margin-right: 20px;
+//           img {
+//             width: 100%;
+//             height: 100%;
+//           }
+         
+          
+//         }
+//       }
+//     }
+//   }
+
+#why-us{
 
 
+  .header-why-us{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+  }
+  .card-why-us{
+    margin-top: 20px;
+    display: flex;
+    gap: 5%;
+    min-height: 140px;
+    div{
+      width: 19%;
+      border: 0.1px solid rgba(128, 128, 128, 0.798);
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+     height: 100%;
+     padding: 15px;
+     height: 220px;
+     overflow: hidden;
+     gap: 12px;
+     cursor: pointer;
+     transition:0.5s ease-in-out;
+     &:hover{
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     
+     }
+      img{
+        max-width: 100%;
+        
+      }
+      span{
+        display: block;
+        text-align: center;
+        font-size: 16px;
+font-weight: 600;
+      }
 
-
-
+    }
+  }
 }
-.title-of-section{
+.parallax-inner{
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/preview/banner-mockup.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 29, 91, 0.822);
+  height: 300px;
+}
+}
+.title-of-section {
   padding-left: 8%;
-  i,span{
-    color:$pink-color;
+  i,
+  span {
+    color: $pink-color;
     font-size: 18px;
     margin-right: 10px;
   }
-  span{
+  span {
     font-weight: 500;
   }
 }
-.title-of-section+h2{
+.title-of-section + h2 {
   padding-left: 8%;
   font-size: 40px;
   font-weight: 500;
@@ -534,13 +625,20 @@ font-size: 13px;
     }
   }
 }
-.prod-slide-item{
-  .items>div{
+.prod-slide-item {
+  .items > div {
     border: none;
   }
-  .card-inner{
+  .card-inner {
     height: 450px;
     box-shadow: none;
+  }
+}
+.sold-des {
+  margin-left: 20px;
+  p{
+    margin-bottom: 0;
+    text-align: start;
   }
 }
 @keyframes signalChanger {
@@ -553,31 +651,61 @@ font-size: 13px;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
- .hadphones-cols{
-  display: none !important;
- }
- .minutes-inner{
-width: 60%;
-height: 100%;
-p{
-  font-size: 15px;
-}
- }
- .testimonials-bg{
-
-
-  div{
-
-  
-    p.profession:nth-child(1){
-
-font-size: 17px !important;
+  .hadphones-cols {
+    display: none !important;
+  }
+  .minutes-inner {
+    width: 60%;
+    height: 100%;
+    p {
+      font-size: 15px;
     }
-    p:nth-child(2){
-     
-      font-size: 30px !important;
-      
-              }
+  }
+  .testimonials-bg {
+    div {
+      p.profession:nth-child(1) {
+        font-size: 17px !important;
+      }
+      p:nth-child(2) {
+        font-size: 30px !important;
+      }
+    }
   }
 }
+.btn-custom {
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+}
+.btn-basket {
+  background-color: $blue-color;
+  border: 0.1px solid $blue-color;
+  &:hover {
+    background-color: $white-color;
+
+    color: $blue-color;
+  }
+}
+.btn-wishlist {
+  background-color: $soft-purple-color;
+  border: 0.1px solid $soft-purple-color;
+  &:hover {
+    background-color: $white-color;
+
+    color: $soft-purple-color;
+  }
+}
+
+.btn-detail {
+  background-color: $pink-color;
+  border: 0.1px solid $pink-color;
+  &:hover {
+    background-color: $white-color;
+
+    color: $pink-color;
+  }
+}
+.newsletter{
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg);
+  height: 300px;
 }

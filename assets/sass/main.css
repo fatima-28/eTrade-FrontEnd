@@ -152,6 +152,217 @@ header nav .header-section ul .hover-underline-animation:hover::after {
     gap: 30px !important;
   }
 }
+footer {
+  /*START NEWSLETTER CSS*/
+  /*END NEWSLETTER CSS*/
+  /*START SOCIAL PROFILE CSS*/
+  /*END SOCIAL PROFILE CSS*/
+}
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: none;
+  outline: none;
+}
+footer a,
+footer a:active,
+footer a:focus {
+  color: #333;
+  text-decoration: none;
+  transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+footer section {
+  padding: 60px 0;
+  /* min-height: 100vh;*/
+}
+footer .footer {
+  margin-top: 20px;
+  background: rgba(149, 206, 208, 0.897);
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+@media only screen and (max-width: 768px) {
+  footer .single_footer {
+    margin-bottom: 30px;
+  }
+}
+footer .single_footer h4 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+footer .single_footer h4::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: #fff;
+  margin-top: 20px;
+}
+footer .single_footer p {
+  color: #fff;
+}
+footer .single_footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer .single_footer ul li a {
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  line-height: 36px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+footer .single_footer ul li a:hover {
+  color: #ff3666;
+}
+footer .single_footer_address ul li {
+  color: #fff;
+}
+footer .single_footer_address ul li span {
+  font-weight: 400;
+  color: #fff;
+  line-height: 28px;
+}
+footer .contact_social ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+footer .subscribe {
+  display: block;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+}
+footer .subscribe__input {
+  background-color: #fff;
+  border: medium none;
+  border-radius: 5px;
+  color: #333;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 60px;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0 150px 0 20px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  footer .subscribe__input {
+    padding: 0 50px 0 20px;
+  }
+}
+footer .subscribe__btn {
+  background-color: transparent;
+  border-radius: 0 25px 25px 0;
+  color: #01c7e9;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+}
+footer .subscribe__btn i {
+  transition: all 0.3s ease 0s;
+}
+@media only screen and (max-width: 768px) {
+  footer .subscribe__btn {
+    right: 0px;
+  }
+}
+footer .subscribe__btn:hover i {
+  color: #ff3666;
+}
+footer button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+}
+footer .social_profile {
+  margin-top: 40px;
+}
+footer .social_profile ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+footer .social_profile ul li {
+  float: left;
+}
+footer .social_profile ul li a {
+  text-align: center;
+  border: 0px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  margin: 0px 5px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media only screen and (max-width: 768px) {
+  footer .social_profile ul li a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer .social_profile ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+footer .social_profile ul li a:hover {
+  background: #ff3666;
+  border: 1px solid #ff3666;
+  color: #fff;
+  border: 0px;
+}
+footer .copyright {
+  margin-top: 70px;
+  padding-top: 40px;
+  color: #fff;
+  font-size: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 830px) {
   nav {
     justify-content: center !important;
@@ -534,11 +745,59 @@ main #testimonials .testimonials-bg div p:nth-child(2) {
   letter-spacing: 1px;
   text-transform: capitalize;
 }
+main #why-us .header-why-us {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main #why-us .card-why-us {
+  margin-top: 20px;
+  display: flex;
+  gap: 5%;
+  min-height: 140px;
+}
+main #why-us .card-why-us div {
+  width: 19%;
+  border: 0.1px solid rgba(128, 128, 128, 0.798);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+  height: 220px;
+  overflow: hidden;
+  gap: 12px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+main #why-us .card-why-us div:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main #why-us .card-why-us div img {
+  max-width: 100%;
+}
+main #why-us .card-why-us div span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+main .parallax-inner {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/preview/banner-mockup.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 29, 91, 0.822);
+  height: 300px;
+}
 
 .title-of-section {
   padding-left: 8%;
 }
-.title-of-section i, .title-of-section span {
+.title-of-section i,
+.title-of-section span {
   color: #ff497c;
   font-size: 18px;
   margin-right: 10px;
@@ -656,6 +915,14 @@ main #testimonials .testimonials-bg div p:nth-child(2) {
   box-shadow: none;
 }
 
+.sold-des {
+  margin-left: 20px;
+}
+.sold-des p {
+  margin-bottom: 0;
+  text-align: start;
+}
+
 @keyframes signalChanger {
   0% {
     opacity: 0;
@@ -681,4 +948,41 @@ main #testimonials .testimonials-bg div p:nth-child(2) {
   .testimonials-bg div p:nth-child(2) {
     font-size: 30px !important;
   }
+}
+.btn-custom {
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+}
+
+.btn-basket {
+  background-color: #49b3ff;
+  border: 0.1px solid #49b3ff;
+}
+.btn-basket:hover {
+  background-color: white;
+  color: #49b3ff;
+}
+
+.btn-wishlist {
+  background-color: #8c71db;
+  border: 0.1px solid #8c71db;
+}
+.btn-wishlist:hover {
+  background-color: white;
+  color: #8c71db;
+}
+
+.btn-detail {
+  background-color: #ff497c;
+  border: 0.1px solid #ff497c;
+}
+.btn-detail:hover {
+  background-color: white;
+  color: #ff497c;
+}
+
+.newsletter {
+  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg);
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */

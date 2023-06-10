@@ -1,0 +1,22 @@
+#blog-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f9f3f0 !important;
+  padding-bottom: 13% !important;
+}
+#blog-page header {
+  width: 100%;
+  width: 100%;
+  box-shadow: none;
+  background: none;
+}
+#blog-page header h1 {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}/*# sourceMappingURL=blog.css.map */

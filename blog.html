@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/plugins/SlickStyle/css/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/animate.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/icofont.min.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/odometer.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/lightcase.css">
+    <link rel="stylesheet" href="./assets/plugins/SlickStyle/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="./assets/plugins/google-scrolling-carousel/jquery.gScrollingCarousel.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/sass/main.css" />
+
+    <title>Blog</title>
+    <style>
+        #blog-page{
+   display: flex;
+   justify-content: 
+   center; 
+   flex-direction: column;
+    background-color: #f9f3f0 !important; 
+    padding-bottom: 5% !important;
+    }
+    header{
+        width: 100%; 
+    width: 100%; box-shadow: none !important;
+    background: none !important;
+    margin-bottom: 4%;
+   
+  
+}
+footer{
+    margin-top: 0;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+    .parent-title{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-of-section,h2{
+        padding-left: 0 !important;
+    }
+  
+    </style>
+</head>
+
+<body >
+    <div class="area"></div>
+   <section id="blog-page">
+    <header class="pad-2">
+        <nav>
+          <div class="header-section">
+            <div class="logo">
+              <a href="#">
+                <img src="./assets/images/Layout/logo.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div class="header-section">
+            <ul>
+              <li class="hover-underline-animation">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="hover-underline-animation">
+                <a href="./shop.html">Shop</a>
+              </li>
+              <li class="hover-underline-animation">
+                <a href="./about.html">About</a>
+              </li>
+              <li class="hover-underline-animation">
+                <a href="./blog.html">Blog</a>
+              </li>
+              <li class="hover-underline-animation">
+                <a href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-section">
+            <div class="icons">
+              <div class="icons-inner circle circle-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+  
+              <div class="icons-inner circle circle-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="icons-inner circle circle-item">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="icons-inner circle circle-item">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div id="myNav" class="overlay">
+                <i class="fa-solid fa-x closebtn" onclick="closeNav()"></i>
+  
+                <div class="overlay-content">
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+              <div class="icons-inner circle bars" onclick="openNav();">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+ <div class="parent-title">
+    <div class="title-of-section">
+        <i class="fa-solid fa-pencil"></i>
+        <span>Our blog page</span>
+      </div>
+  <h2>Blog Page</h2>
+ </div>
+   </section>
+
+    
+
+<section>
+   
+    <div class="blog blog--two padding-tb overflow-hidden bg-transparent">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="row g-5 g-lg-4">
+                    <div class="col-lg-8 col-12">
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-11.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-12.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-10.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-11.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">I Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-11.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html"> Lorem ipsum dolor sit, amet consectetur adipisicing.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-12.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-10.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-11.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-12.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur.</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="blog-item">
+                                    <div class="blog-thumb">
+                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-10.png" alt="image"></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            <ul>
+                                                <li><a href="#"><i class="fa-solid fa-user"></i> Smith show</a></li>
+                                                <li><a href="#"><i class="fa-solid fa-message"></i> 11 Comments</a></li>
+                                            </ul>
+                                        </div>
+                                        <h5><a href="blog-single.html">Lorem ipsum dolor sit amet consecteturs</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center mt-5">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="sidebar">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="sidebar-author">
+                                        <div class="thumb">
+                                            <img src="./assets/images/Blog/jhon-doe.png" alt="image">
+                                        </div>
+                                        <div class="content">
+                                            <h5>John Doe</h5>
+                                            <span>Seller</span>
+                                            <p>Lorem ipsum dolotetur adipisicing elit. Similique, ad!</p>
+                                            <ul>
+                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="sidebar-search">
+                                        <div class="head">
+                                            <h5>Search Your Keywords</h5>
+                                        </div>
+                                        <div class="body">
+                                            <form action="/">
+                                                <input type="text" placeholder="Search Here">
+                                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="sidebar-recentpost">
+                                        <div class="head">
+                                            <h5>Most Popular Post</h5>
+                                        </div>
+                                        <div class="body">
+                                            <ul>
+                                                <li>
+                                                    <div class="thumb">
+                                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-04.png" alt="image"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h6><a href="blog-single.html">Consulting reportng qounc arei could more.</a></h6>
+                                                        <span>June 20, 2022</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="thumb">
+                                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-05.png" alt="image"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h6><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur elit.</a></h6>
+                                                        <span>Feb 14, 2023</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="thumb">
+                                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-04.png" alt="image"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h6><a href="blog-single.html">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></h6>
+                                                        <span>June 24, 2022</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="thumb">
+                                                        <a href="blog-single.html"><img src="./assets/images/Blog/blog-05.png" alt="image"></a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <h6><a href="blog-single.html">Lorem ipsum dolor sit amet consectetur adipisicing..</a></h6>
+                                                        <span>June 26, 2022</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="sidebar-categorie">
+                                        <div class="head">
+                                            <h5>all Categories</h5>
+                                        </div>
+                                        <div class="body">
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> Phones</a>
+                                                        <span>02</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> PC</a>
+                                                        <span>04</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> Gaming</a>
+                                                        <span>06</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> Headphones</a>
+                                                        <span>08</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> Ipad</a>
+                                                        <span>03</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa-solid fa-folder-closed"></i> SmartWatch</a>
+                                                        <span>07</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="sidebar-tags">
+                                        <div class="head">
+                                            <h5>Our Popular Tags</h5>
+                                        </div>
+                                        <div class="body">
+                                            <div class="content">
+                                                <ul>
+                                                    <li><a href="#">Phones</a></li>
+                                                    <li><a href="#">Samsung</a></li>
+                                                    <li><a href="#">Iphone</a></li>
+                                                    <li><a href="#">Airpods</a></li>
+                                                    <li><a href="#">Console</a></li>
+                                                    <li><a href="#">PC</a></li>
+                                                    <li><a href="#">Gaming</a></li>
+                                                    <li><a href="#">Laptop</a></li>
+                                                    <li><a href="#">Ipad</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+</section>
+<footer>
+    <div class="footer">
+      <div class="container">     
+          <div class="row">                       
+              <div class="col-lg-4 col-sm-4 col-xs-12">
+                  <div class="single_footer">
+                      <h4>Services</h4>
+                      <ul>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">Simply dummy text</a></li>
+                          <li><a href="#">The printing and typesetting </a></li>
+                          <li><a href="#">Standard dummy text</a></li>
+                          <li><a href="#">Type specimen book</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single_footer single_footer_address">
+                      <h4>Page Link</h4>
+                      <ul>
+                          <li><a href="#">Lorem Ipsum</a></li>
+                          <li><a href="#">Simply dummy text</a></li>
+                          <li><a href="#">The printing and typesetting </a></li>
+                          <li><a href="#">Standard dummy text</a></li>
+                          <li><a href="#">Type specimen book</a></li>
+                      </ul>
+                  </div>
+              </div><!--- END COL -->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                  <div class="single_footer single_footer_address">
+                      <h4>Subscribe today</h4>
+                      <div class="signup_form">                           
+                          <form action="#" class="subscribe">
+                              <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                              <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="social_profile">
+                      <ul>
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      </ul>
+                  </div>                          
+              </div>
+          </div>
+       
+  </div>
+  </footer>
+
+    
+    <a href="#" class="scrollToTop"><i class="fa-solid fa-arrow-turn-up bg-theme6"></i></a>
+
+    <script src="./assets/plugins/SlickStyle/js/jquery.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/waypoints.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/swiper.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/jquery.counterup.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/circularProgressBar.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/wow.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/viewport.jquery.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/odometer.min.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/lightcase.js"></script>
+    <script src="./assets/plugins/SlickStyle/js/functions.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+</html>
