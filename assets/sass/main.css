@@ -59,7 +59,7 @@ header {
   display: flex;
   justify-content: center;
   position: sticky;
-  z-index: 3;
+  z-index: 16;
   top: 5px;
 }
 header nav {
@@ -197,7 +197,7 @@ footer section {
 }
 footer .footer {
   margin-top: 20px;
-  background: rgba(149, 206, 208, 0.897);
+  background: rgba(255, 255, 255, 0.8431372549);
   padding-top: 80px;
   padding-bottom: 40px;
 }
@@ -207,7 +207,7 @@ footer .footer {
   }
 }
 footer .single_footer h4 {
-  color: #fff;
+  color: black;
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: 700;
@@ -1058,12 +1058,32 @@ a {
 }
 
 #sort {
-  padding: 0 5%;
+  padding: 0 3%;
 }
 #sort select {
   height: 60px;
+  font-size: 13px;
 }
 
 .col-6 .row {
-  justify-content: end;
+  justify-content: end !important;
+}
+
+.testimonial-area {
+  background-color: white !important;
+  border: 3px solid #49b3ff;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.team-social a {
+  color: white !important;
+}
+
+.date-b {
+  box-shadow: none !important;
+}
+
+button.text-white {
+  z-index: 0 !important;
 }/*# sourceMappingURL=main.css.map */

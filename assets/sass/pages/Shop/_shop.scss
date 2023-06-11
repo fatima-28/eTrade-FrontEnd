@@ -4,12 +4,13 @@
     padding-top: 2%;
 }
 #sort{
-    padding: 0 5%;
+    padding: 0 3%;
     select{
         height: 60px;
+        font-size: 13px;
     }
 }
 .col-6 .row{
    
-   justify-content: end;
+   justify-content: end !important;
 }

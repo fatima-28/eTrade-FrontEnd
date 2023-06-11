@@ -59,7 +59,7 @@ header {
   display: flex;
   justify-content: center;
   position: sticky;
-  z-index: 3;
+  z-index: 16;
   top: 5px;
   nav {
     background-color: $white-color;
@@ -202,7 +202,7 @@ height: auto;
   }
 .footer {
   margin-top: 20px;
-background: rgba(149, 206, 208, 0.897);
+background: #ffffffd7;
 padding-top: 80px;
 padding-bottom: 40px;
 }
@@ -211,7 +211,7 @@ padding-bottom: 40px;
 .single_footer{margin-bottom:30px;}
 }
 .single_footer h4 {
-color: #fff;
+color: black;
 margin-top: 0;
 margin-bottom: 25px;
 font-weight: 700;
