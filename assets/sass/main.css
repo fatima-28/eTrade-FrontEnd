@@ -52,6 +52,7 @@
 
 .pad-2 {
   background-color: #f9f3f0;
+  border: none;
 }
 
 header {
@@ -985,4 +986,73 @@ main .parallax-inner {
 .newsletter {
   background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg);
   height: 300px;
+  border-radius: 10px;
+}
+.newsletter .box-news {
+  padding: 5%;
+}
+.newsletter .box-news input {
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 7px;
+  margin-right: 1%;
+  outline: none;
+  width: 33%;
+}
+.newsletter .box-news h2 {
+  margin-bottom: 3%;
+}
+.newsletter .box-news .btn {
+  border-radius: 7px;
+  height: 50px;
+}
+
+.pad-2 {
+  background-color: #f9f3f0 !important;
+  margin-bottom: 0 !important;
+}
+
+#blog-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f9f3f0 !important;
+  padding-bottom: 5% !important;
+}
+
+header {
+  width: 100%;
+  width: 100%;
+  box-shadow: none !important;
+  background: none !important;
+  margin-bottom: 4%;
+}
+
+footer {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.parent-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-of-section, h2 {
+  padding-left: 0 !important;
+}
+
+.content a:hover, .pagination a:hover {
+  color: rgb(191, 191, 191) !important;
+}
+
+.parent-title {
+  background-color: #f9f3f0;
+  padding-bottom: 5%;
+  padding-top: 2%;
 }/*# sourceMappingURL=main.css.map */

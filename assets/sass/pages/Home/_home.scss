@@ -708,4 +708,30 @@ font-weight: 600;
 .newsletter{
   background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg);
   height: 300px;
+  border-radius: 10px;
+  .box-news{
+   padding: 5%;
+   input{
+
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 7px;
+    margin-right: 1%;
+    outline: none;
+    width: 33%;
+   }
+   h2{
+    margin-bottom: 3%;
+   }
+  .btn{
+    border-radius: 7px;
+    height: 50px;
+  }
+  }
+}
+.pad-2{
+  background-color: #f9f3f0 !important;
+  
+  margin-bottom: 0 !important;
+
 }

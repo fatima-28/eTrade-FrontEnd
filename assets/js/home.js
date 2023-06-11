@@ -1,5 +1,5 @@
 var elem = document.querySelector("header");
-var scrollTrigger = 20;
+var scrollTrigger = 200;
 window.onscroll = ScrollHandlerForHeader;
 function ScrollHandlerForHeader() {
     if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
