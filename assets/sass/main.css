@@ -786,7 +786,7 @@ main #why-us .card-why-us div span {
   font-weight: 600;
 }
 main .parallax-inner {
-  background-image: url(https://new.axilthemes.com/demo/template/etrade/assets/images/preview/banner-mockup.png);
+  background-image: url(https://thumbs.dreamstime.com/b/abstract-pattern-conductive-paths-electronic-board-close-up-soft-focus-abstract-pattern-conductive-paths-180092026.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1055,4 +1055,15 @@ a {
   background-color: #f9f3f0;
   padding-bottom: 5%;
   padding-top: 2%;
+}
+
+#sort {
+  padding: 0 5%;
+}
+#sort select {
+  height: 60px;
+}
+
+.col-6 .row {
+  justify-content: end;
 }/*# sourceMappingURL=main.css.map */
