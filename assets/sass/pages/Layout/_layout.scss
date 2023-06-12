@@ -156,12 +156,7 @@ header {
   }
 }
 footer{
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {}
+
   a,
   a:hover,
   a:focus,
@@ -232,7 +227,7 @@ margin: 0;
 padding: 0;
 list-style: none;
 }
-.single_footer ul li{}
+
 .single_footer ul li a {
 color: #fff;
 -webkit-transition: all 0.3s ease 0s;
@@ -243,8 +238,7 @@ text-transform: capitalize;
 }
 .single_footer ul li a:hover { color: #ff3666; }
 
-.single_footer_address{}
-.single_footer_address ul{}
+
 .single_footer_address ul li{color:#fff;}
 .single_footer_address ul li span {
 font-weight: 400;

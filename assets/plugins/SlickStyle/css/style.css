@@ -4,61 +4,10 @@
 
 
 @import '../../../sass/abstracts/_variables.scss';
-.footer-timetable .footer-body ul li,
-.footer-about ul li,
-.cart-item,
-.cart-bottom form,
-.review-meta,
-.review-showing ul li,
-.singlecontent .countadd,
-.shop-item--list .shop-inner,
-.fanfuct .section-wrapper ul li,
-.fanfuct .section-wrapper ul,
-.treatment-item,
-.header .area .main-menu .menu,
-.header .area,
-.sidebar-totalamaunt .top,
-.sidebar-radiolist .form-check .formcheck,
-.sidebar-subtotal,
-.sidebar-relatedpost .body ul,
-.sidebar-commentForm form,
-.sidebar-comment .body ul li .content-top,
-.sidebar-categorie .body ul li,
-.sidebar-author .body,
-.sidebar .body ul li,
-.pricing-head,
-.store .section-header ul,
-.quote,
+
 .blog--classic .blog-meta ul,
 .blog--two .blog-meta ul,
 .blog-author,
-.appointment--three .section-wrapper ul li,
-.appointment--two .section-wrapper ul li,
-.testimonial--three .testimonial-author,
-.testimonial--two .testimonial-pagination,
-.testimonial--two .testimonial-author,
-.testimonial--two .testimonial-inner,
-.testimonial--one .testimonial-content--rating,
-.testimonial--one .testimonial-inner,
-.team-social ul,
-.offer--two .offer-groupbtn,
-.product--five .section-wrapper ul li .nav-link,
-.product--four .product-content .dot,
-.product--two .section-header .right,
-.product--two .section-header,
-.htu-lists ul li,
-.care ul li,
-.about--three .counter,
-.about--two .about-content ul li,
-.about--two .about-content ul,
-.banner--six .banner-groupbtn,
-.banner--five .banner-groupbtn,
-.banner--three .product,
-.banner--three .banner-groupbtn,
-.banner--three .shape--two .shape-item,
-.banner--two .shape-item,
-.banner--two .banner-groupbtn,
-.mrcart-head,
 .search-area form,
 .search,
 .tags-section .tags,
@@ -275,23 +224,9 @@ select {
   width: 100%;
 }
 
-.singlethumb-right .thumb img,
-.shop-thumb img,
-.shop-thumb::after,
-.sidebar-author .body .thumb img,
+
+
 .blog-author .thumb img,
-.appointment-thumb,
-.testimonial--three .testimonial-author .thumb img,
-.testimonial--three .testimonial-thumb,
-.testimonial--two .testimonial-author .thumb img,
-.testimonial--two .testimonial-thumb img,
-.testimonial--one .testimonial-thumb img,
-.testimonial--one .testimonial-item::after,
-.team-thumb img,
-.product--four .product-thumb img,
-.product--four .product-thumb a,
-.feature--three .feature-thumb a img,
-.search,
 .map iframe {
   height: 100%;
 }
@@ -394,34 +329,7 @@ select {
   font-weight: 500;
 }
 
-.shop-content .price span,
-.contact-content p b,
-.banner--six .banner-content h2,
-.banner--five .banner-content h2,
-.banner--three .banner-content h2,
-.banner--two .banner-content h2,
-.banner--one .banner-content h2,
-.banner--one .banner-content h3,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a,
-a h1,
-a h2,
-a h3,
-a h4,
-a h5,
-a h6 {
-  font-weight: 400;
-}
+
 
 .shop-link,
 .testimonial--two .testimonial-pagination span::after {
@@ -440,23 +348,9 @@ a h6 {
   justify-content: center;
 }
 
-.footer-timetable .footer-body ul li,
-.cart-bottom form,
-.review-meta,
-.header .area,
-.sidebar-totalamaunt .top,
-.sidebar-radiolist .form-check .formcheck,
-.sidebar-subtotal,
-.sidebar-relatedpost .body ul,
-.sidebar-commentForm form,
-.sidebar-comment .body ul li .content-top,
-.sidebar-categorie .body ul li,
-.pricing-head,
+
 .blog--two .blog-meta ul,
-.testimonial--two .testimonial-inner,
-.testimonial--one .testimonial-inner,
-.product--two .section-header,
-.mrcart-head,
+.testimonial--two 
 .tags-section {
   justify-content: space-between;
 }

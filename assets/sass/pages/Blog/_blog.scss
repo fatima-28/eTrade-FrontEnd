@@ -1,3 +1,93 @@
+.blog--classic .blog-meta ul,
+.blog--two .blog-meta ul,
+.blog-author{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog--classic .blog-thumb,
+.custom-upload {
+  position: relative;
+}
+
+.mrcart,
+.search {
+  position: fixed;
+}
+
+
+.blog--classic .blog-thumb .date,
+.custom-upload input[type="file"] {
+  position: absolute;
+  content: "";
+}
+
+
+.blog--two .blog-thumb,
+.blog-author .thumb,
+.blog-thumb,
+.blog--two .blog-content h5 a,
+.product--four .product-content h6 a {
+  overflow: hidden;
+}
+
+
+
+.blog--two .blog-thumb a img,
+.blog-author .thumb img,
+.blog-thumb a img {
+  width: 100%;
+}
+
+
+
+.blog-author .thumb img,
+.map iframe {
+  height: 100%;
+}
+
+
+
+.blog--classic .blog-meta ul li a,
+.blog--classic .blog-content h4,
+.blog--two .blog-content h5 a,
+.blog-content a h5,
+.lab-btn {
+  font-weight: 600;
+}
+
+
+.blog-author .text h6,
+.about--two .about-content h6,
+.section-header h6 {
+  font-weight: 500;
+}
+
+
+
+.shop-link,
+.testimonial--two .testimonial-pagination span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.blog--two .blog-meta ul,
+.testimonial--two 
+.tags-section {
+  justify-content: space-between;
+}
+
+.singlecontent .countadd {
+  justify-content: flex-start;
+}
+
 #blog-page{
     display: flex;
     justify-content: 
