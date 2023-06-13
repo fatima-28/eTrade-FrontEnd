@@ -1775,10 +1775,10 @@ button.text-white {
   background-color: #eaeaea;
 }
 
-.basket-icon {
+.heart-icon {
   position: relative;
 }
-.basket-icon .count-card {
+.heart-icon .wishlist-sup {
   position: absolute;
   right: 1%;
   top: 1%;
@@ -1792,363 +1792,104 @@ button.text-white {
   border-radius: 50%;
 }
 
-#category-products {
-  background-color: #f9f3f0;
-}
-
-.card-main #caption-photo .back-part {
-  background-image: url("../../../assets/imgs/Cart/header-bgImg.jpeg");
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 45px 0px;
-}
-.card-main #caption-photo .back-part .container h1 {
-  font-weight: 400;
-  letter-spacing: 3px;
-}
-.card-main #caption-photo .back-part .container p {
-  font-weight: 300;
-  font-size: 20px;
-  color: #49b3ff;
-}
-.card-main #links {
-  border-bottom: 1px solid #ededed;
-}
-.card-main #links .container .all-links {
-  padding-left: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.card-main #links .container .all-links a {
-  text-decoration: none;
-  color: #7d7d7d;
-  transition: all 0.5s;
-  font-size: 15px;
-  font-weight: 300;
-}
-.card-main #links .container .all-links a:hover {
-  color: #49b3ff;
-}
-.card-main #links .container .all-links i {
-  font-size: 12px;
-  color: #7d7d7d;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.card-main #links .container .all-links span {
-  font-size: 15px;
-  font-weight: 400;
-  color: #707070;
-}
-.card-main #cart-part {
-  border-bottom: 1px solid #ededed;
-}
-.card-main #cart-part .all .deactive-shop {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.card-main #cart-part .all .deactive-shop i {
-  font-size: 100px;
-  color: #868686;
-}
-.card-main #cart-part .all .deactive-shop span {
-  font-weight: 200;
-  color: #616161;
-  padding-top: 25px;
-  padding-bottom: 35px;
-}
-.card-main #cart-part .all .deactive-shop button {
-  transition: all 0.5s;
-  background-color: #49b3ff;
-  border: none;
-  padding: 10px 30px;
-}
-.card-main #cart-part .all .deactive-shop button a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-}
-.card-main #cart-part .all .deactive-shop button:hover {
-  background-color: #bf913e;
-}
-.card-main #product-table {
+.wishlist-main #product-table {
   border-bottom: 1px solid #ebebeb;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
-.card-main #product-table .all .products .left .table-part .table thead tr th {
+.wishlist-main #product-table .all .products .main .table-part .table thead tr th {
   padding-left: 20px;
   color: #c5c5c5;
   font-weight: 300;
   font-size: 18px;
   padding-bottom: 20px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr td {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td {
   position: relative;
   padding-top: 40px;
   padding-bottom: 35px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr td img {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td img {
   width: 60px;
   height: 60px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity {
-  display: flex;
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td .choose {
+  width: 100%;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity .minus {
-  position: relative;
-  left: 20px;
-  z-index: 2;
-}
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity input {
-  position: relative;
-  outline: none;
-  width: 100px !important;
-  height: 42px !important;
-  color: #c6c6c6;
-  border: 1px solid #c6c6c6;
-}
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity input::-webkit-outer-spin-button,
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity .plus {
-  position: relative;
-  right: 20px;
-}
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 42px;
-  transition: all 0.5s;
-  color: #c6c6c6;
-}
-.card-main #product-table .all .products .left .table-part .table tbody tr .quantity i:hover {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td .choose a {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid #fcb941;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #fcb941;
+  font-weight: 300;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
-  color: #49b3ff;
+  transition: all 0.5s;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .image {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td .choose a i {
+  padding-right: 10px;
+}
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr td .choose a:hover {
+  color: white;
+  background-color: #fcb941;
+}
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .image {
   padding-top: 20px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .name {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .name {
   cursor: pointer;
   transition: all 0.5s;
   padding-top: 40px;
   font-size: 18px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .name:hover {
-  color: #49b3ff;
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .name:hover {
+  color: #fcb941;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .oneprice {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .oneprice {
+  color: #fcb941;
   padding-top: 40px;
   font-size: 18px;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .total {
-  padding-top: 40px;
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .stock {
+  padding-left: 20px;
   font-size: 18px;
-  color: #49b3ff;
+  color: #fcb941;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .delete i {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .delete i {
   color: #cfcfcf;
   cursor: pointer;
   transition: all 0.5s;
 }
-.card-main #product-table .all .products .left .table-part .table tbody tr .delete i:hover {
+.wishlist-main #product-table .all .products .main .table-part .table tbody tr .delete i:hover {
   color: black;
 }
-.card-main #product-table .all .products .left .icons {
+.wishlist-main #product-table .all .products .main .icons {
   padding-top: 30px;
   display: flex;
-  justify-content: space-between;
-}
-.card-main #product-table .all .products .left .icons .left-icon {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
   gap: 10px;
 }
-.card-main #product-table .all .products .left .icons .left-icon input {
-  background-color: #fafafa;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 110px;
-  border: 1px solid #ebebeb;
-  outline: none;
-}
-.card-main #product-table .all .products .left .icons .left-icon ::-moz-placeholder {
-  font-size: 17px;
-  color: #b5b5b5;
-}
-.card-main #product-table .all .products .left .icons .left-icon ::placeholder {
-  font-size: 17px;
-  color: #b5b5b5;
-}
-.card-main #product-table .all .products .left .icons .left-icon i {
-  padding: 14px;
-  color: #49b3ff;
-  cursor: pointer;
-  transition: all 0.5s;
-  border: 1px solid #49b3ff;
-}
-.card-main #product-table .all .products .left .icons .left-icon i:hover {
-  background-color: #49b3ff;
-  color: white;
-}
-.card-main #product-table .all .products .left .icons .right-icon a {
-  font-size: 15px;
-  transition: all 0.5s;
-  border: 1px solid #d7d7d7;
-  background-color: white;
-  padding: 14px 23px;
-  text-decoration: none;
-  color: #515151;
-  text-transform: uppercase;
-}
-.card-main #product-table .all .products .left .icons .right-icon a i {
-  padding-left: 15px;
-}
-.card-main #product-table .all .products .left .icons .right-icon a:hover {
-  color: #49b3ff;
-}
-.card-main #product-table .all .products .right {
-  background-color: #f9f9f9;
-  border: 1px dashed #d7d7d7;
-  padding: 30px 40px;
-  width: 100%;
-}
-.card-main #product-table .all .products .right h4 {
-  font-weight: 400;
-  font-size: 22px;
-  padding-bottom: 13px;
-  border-bottom: 1px solid #cbcbcb;
-}
-.card-main #product-table .all .products .right .subtotal {
-  font-size: 17px;
-  padding-top: 10px;
+.wishlist-main #product-table .all .products .main .icons span {
   font-weight: 300;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eaeaea;
+  color: #777777;
 }
-.card-main #product-table .all .products .right .shipping {
-  padding-top: 20px;
-}
-.card-main #product-table .all .products .right .shipping span {
-  font-size: 17px;
-  font-weight: 300;
-}
-.card-main #product-table .all .products .right .shipping .each-option {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 200;
-  font-size: 15px;
-}
-.card-main #product-table .all .products .right .shipping .each-option label {
-  cursor: pointer;
-  padding: 0;
-}
-.card-main #product-table .all .products .right .shipping .each-option label input {
-  margin-right: 10px;
-  accent-color: #49b3ff;
-}
-.card-main #product-table .all .products .right .shipping .option {
-  padding-top: 20px;
-}
-.card-main #product-table .all .products .right .estimate {
-  border-bottom: 1px solid #f1f1f1;
-}
-.card-main #product-table .all .products .right .estimate span {
-  font-size: 17px;
-  font-weight: 300;
-}
-.card-main #product-table .all .products .right .estimate p {
-  display: inline-block;
-  padding-top: 10px;
-  font-size: 15px;
-  font-weight: 200;
-  color: #9e9e9e;
-  border-bottom: 1px solid #9e9e9e;
-  padding-bottom: 2px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.card-main #product-table .all .products .right .estimate p:hover {
-  color: #49b3ff;
-  border-bottom: 1px solid #49b3ff;
-}
-.card-main #product-table .all .products .right .total {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-}
-.card-main #product-table .all .products .right .total span {
-  color: #49b3ff;
-  font-weight: 300;
-}
-.card-main #product-table .all .products .right button {
-  width: 100%;
-  border: 1px solid #49b3ff;
-  background-color: transparent;
-  text-transform: uppercase;
-  color: #49b3ff;
-  font-weight: 300;
-  font-size: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.card-main #product-table .all .products .right button:hover {
-  color: white;
-  background-color: #49b3ff;
-}
-.card-main #product-table .all .products .bottom {
-  text-align: center;
-  margin-top: 20px;
-  border: 1px solid #d7d7d7;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.card-main #product-table .all .products .bottom a {
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: black;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.card-main #product-table .all .products .bottom a i {
-  padding-left: 10px;
-}
-.card-main #product-table .all .products .bottom a:hover {
-  color: #49b3ff;
-}
-.card-main #scrollBtn .btn {
-  opacity: 0;
-}
-.card-main #scrollBtn .btn i {
-  position: fixed;
-  bottom: 100px;
-  right: 50px;
-  z-index: 99;
-  font-size: 30px;
-  background-color: #fafafa;
+.wishlist-main #product-table .all .products .main .icons i {
   color: #999999;
+  border: 1px solid #999999;
+  padding: 8px 8px;
+  border-radius: 50px;
+  transition: all 0.2s;
   cursor: pointer;
-  padding: 18px;
-  transition: all 0.5s;
 }
-.card-main #scrollBtn .btn i:hover {
-  background-color: #eaeaea;
+.wishlist-main #product-table .all .products .main .icons i:hover {
+  color: #fcb941;
+  border-color: #fcb941;
 }/*# sourceMappingURL=main.css.map */

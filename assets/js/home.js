@@ -111,3 +111,71 @@ function openNav() {
           document.querySelector(".count-card").innerText = cnt;
       }
   }
+
+  //add to wishlsit with heart icon
+  let addWishlistBtns = document.querySelectorAll(".heart");
+  let wishlisted = [];
+  // let alertMessage = document.querySelector("#info-message .all")
+
+  if (JSON.parse(localStorage.getItem("wishlisted")) != null) {
+      wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+  }
+
+  addWishlistBtns.forEach(addWishlist => {
+      getWishlistCount(wishlisted);
+
+      let checkedID = addWishlist.parentNode.parentNode.getAttribute("data-id");
+      let productInfo = wishlisted.find(m => m.id == checkedID);
+      if (productInfo != undefined) {
+          addWishlist.classList.remove("fa-regular");
+          addWishlist.classList.remove("open-hovered");
+          addWishlist.classList.add("fa-solid");
+      }
+
+      addWishlist.addEventListener("click", function (e) {
+          e.preventDefault();
+          let productImg = this.parentNode.parentNode.parentNode.children[0].children[0].getAttribute("src");
+
+         
+          let productName = this.parentNode.parentNode.parentNode.children[1].children[0].innerText
+          let productPrice = this.parentNode.parentNode.parentNode.children[1].children[1].innerText
+          let productID = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
+          let checkProduct = wishlisted.find(m => m.id == productID);
+         
+          if (checkProduct != undefined) {
+              this.classList.add("fa-regular");
+              this.classList.add("open-hovered");
+              this.classList.remove("fa-solid");
+              let unlistedIndex = wishlisted.indexOf(checkProduct);
+              if (unlistedIndex > -1) {
+                  wishlisted.splice(unlistedIndex, 1);
+              }
+
+              alertMessage.firstElementChild.innerText = "Product deleted from Wishlist";
+              localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
+              let decreasedSup = parseInt(document.querySelector(".wishlist-sup").innerText) - 1;
+              document.querySelector(".wishlist-sup").innerText = decreasedSup;
+          } else {
+              this.classList.remove("fa-regular");
+              this.classList.remove("open-hovered");
+              this.classList.add("fa-solid");
+              wishlisted.push({
+                  id: productID,
+                  image: productImg,
+                  name: productName,
+                  price: productPrice,
+                  count: 1
+              });
+          }
+          localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
+          getWishlistCount(wishlisted);
+      });
+  });
+
+  function getWishlistCount(arr) {
+      let cnt = 0;
+      for (const eachItem of arr) {
+          cnt += eachItem.count;
+          document.querySelector(".wishlist-sup").innerText = cnt;
+      }
+  }

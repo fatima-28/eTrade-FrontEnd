@@ -64,7 +64,7 @@ $(function () {
             max="10000" value="${eachProduct.count}">
             <i class="fa-solid fa-plus plus"></i>
         </td>
-        <td class="total-product" style="color: #fcb941;">$${(parseFloat(eachProduct.price.substring(1)) * parseInt(eachProduct.count)).toFixed(2)}</td>
+        <td class="total-product" style="color: #49b3ff;">$${(parseFloat(eachProduct.price.substring(1)) * parseInt(eachProduct.count)).toFixed(2)}</td>
         <td class="delete"><i class="fa-solid fa-x delete-all"></i></td>
     </tr>`;
             getProductsCount(cartProducts);
