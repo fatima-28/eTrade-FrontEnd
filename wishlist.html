@@ -69,12 +69,12 @@
               <sup class="count-card" >0</sup>
             </a>
             
-            <div class="icons-inner circle circle-item heart-icon">
+            <a href="./wishlist.html" class="icons-inner circle circle-item heart-icon">
               <i class="fa-solid fa-heart"></i>
               <sup class="wishlist-sup" >0</sup>
               
             
-            </div>
+            </a>
             <a href="./register.html" class="icons-inner circle circle-item">
               <i class="fa-solid fa-user">
                 
@@ -112,7 +112,21 @@
       </section>
   
 
-
+      <section id="cart-part">
+        <div class="all">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="deactive-shop">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>No products added to wishlist</span>
+                            <button><a href="./shop.html">Go Shop</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="product-table">
         <div class="all">
@@ -124,40 +138,20 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Product</th>
-                                            <th scope="col"></th>
+                                            <th scope="col">Image</th>
+                                            <th scope="col">Name</th>
                                             <th scope="col">Price</th>
-                                            <th scope="col">Stock Status</th>
+                                           
                                             <th scope="col"></th>
-                                            <th scope="col"></th>
+                                          
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!-- <tr data-id="${wish.id}">
-                                            <td class="image"><img src="${wish.image}" alt=""></td>
-                                            <td class="name">${wish.name}</td>
-                                            <td class="oneprice">${wish.price}</td>
-                                            <td class="stock">
-                                                <span>In Stock</span>
-                                            </td>
-                                            <td class="select">
-                                                <div class="choose">
-                                                    <a href="" class="addToCart"><i class="fa-solid fa-cart-plus"></i>add to cart</a>
-                                                </div>
-                                            </td>
-                                            <td class="delete"><i class="fa-solid fa-x delete-all"></i></td>
-                                        </tr> -->
+                                       
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="icons">
-                                <span>Share on:</span>
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-youtube"></i>
-                                <i class="fa-brands fa-pinterest"></i>
-                            </div>
+                         
                         </div>
                     </div>
                 </div>
@@ -241,7 +235,7 @@
         AOS.init();
       </script>
 
-      <script src="./assets/js/card.js"></script>
+      <script src="./assets/js/wishlist.js"></script>
     </body>
 
 

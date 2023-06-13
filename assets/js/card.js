@@ -13,6 +13,22 @@ function getProductsCount(arr) {
     }
 }
 
+let wishlisted = [];
+
+
+if (JSON.parse(localStorage.getItem("wishlisted")) != null) {
+    wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
+}
+localStorage.setItem("wishlisted", JSON.stringify(wishlisted));
+getWishlistCount(wishlisted);
+
+function getWishlistCount(arr) {
+    let cnt = 0;
+    for (const eachItem of arr) {
+        cnt += eachItem.count;
+        document.querySelector(".wishlist-sup").innerText = cnt;
+    }
+}
 var elem = document.querySelector("header");
 var scrollTrigger = 200;
 window.onscroll = ScrollHandlerForHeader;
@@ -36,7 +52,7 @@ $(function () {
    
  
 
-    //Adding Cart Part
+
     let cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
     let tableBody = document.querySelector("tbody");
     let input = document.querySelectorAll("input")

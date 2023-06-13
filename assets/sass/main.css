@@ -597,22 +597,23 @@ main #category-products .products-main div div .card-inner .prod-desc .buttons b
   background-color: white;
   color: #8c71db;
 }
-main #category-products .products-main div div .card-inner .prod-desc button:nth-child(3) {
+main #category-products .products-main div div .card-inner .prod-desc .detail-btn {
   background-color: #ff497c;
   border: 0.1px solid #ff497c;
 }
-main #category-products .products-main div div .card-inner .prod-desc button:nth-child(3):hover {
+main #category-products .products-main div div .card-inner .prod-desc .detail-btn:hover {
   background-color: white;
   color: #ff497c;
 }
-main #category-products .products-main div div .card-inner button {
+main #category-products .products-main div div .card-inner button, main #category-products .products-main div div .card-inner .detail-btn {
+  color: white !important;
   padding: 10px 15px;
   transition: 0.5s;
   cursor: pointer;
   color: white;
   border-radius: 5px;
 }
-main #category-products .products-main div div .card-inner button:focus {
+main #category-products .products-main div div .card-inner button:focus, main #category-products .products-main div div .card-inner .detail-btn:focus {
   outline: none;
 }
 main #headphone-poster .headphone-inner {
@@ -787,7 +788,7 @@ main #why-us .card-why-us div span {
   font-weight: 600;
 }
 main .parallax-inner {
-  background-image: url(https://thumbs.dreamstime.com/b/abstract-pattern-conductive-paths-electronic-board-close-up-soft-focus-abstract-pattern-conductive-paths-180092026.jpg);
+  background-image: url(https://t3.ftcdn.net/jpg/01/14/47/12/360_F_114471291_nbYCT471AB0Ck6Wingz7YVCRFlUhdUvG.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1892,4 +1893,204 @@ button.text-white {
 .wishlist-main #product-table .all .products .main .icons i:hover {
   color: #fcb941;
   border-color: #fcb941;
+}
+
+#prod-detail {
+  background-color: #f9f3f0;
+  padding: 10% 5px;
+}
+#prod-detail .card {
+  border: none;
+  background-color: #f9f3f0;
+}
+#prod-detail .card-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#prod-detail img {
+  width: 100%;
+  display: block;
+  height: 80%;
+}
+#prod-detail .img-display {
+  overflow: hidden;
+}
+#prod-detail .img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+#prod-detail .img-showcase img {
+  min-width: 100%;
+}
+#prod-detail .img-select {
+  display: flex;
+}
+#prod-detail .img-item {
+  margin: 0.3rem;
+}
+#prod-detail .img-item:nth-child(1),
+#prod-detail .img-item:nth-child(2),
+#prod-detail .img-item:nth-child(3) {
+  margin-right: 0;
+}
+#prod-detail .img-item:hover {
+  opacity: 0.8;
+}
+#prod-detail .product-content {
+  padding: 2rem 1rem;
+}
+#prod-detail .product-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
+}
+#prod-detail .product-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #12263a;
+}
+#prod-detail .product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  background: #256eff;
+  color: #fff;
+  padding: 0 0.3rem;
+  transition: all 0.5s ease;
+}
+#prod-detail .product-link:hover {
+  opacity: 0.9;
+}
+#prod-detail .product-rating {
+  color: #ffc107;
+}
+#prod-detail .product-rating span {
+  font-weight: 600;
+  color: #252525;
+}
+#prod-detail .product-price {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#prod-detail .product-price span {
+  font-weight: 400;
+}
+#prod-detail .last-price span {
+  color: #f64749;
+  text-decoration: line-through;
+}
+#prod-detail .new-price span {
+  color: #256eff;
+}
+#prod-detail .product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+}
+#prod-detail .product-detail p {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+#prod-detail .product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+#prod-detail .product-detail ul li {
+  margin: 0;
+  list-style: none;
+  background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
+  background-size: 18px;
+  padding-left: 1.7rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+}
+#prod-detail .product-detail ul li span {
+  font-weight: 400;
+}
+#prod-detail .purchase-info {
+  margin: 1.5rem 0;
+}
+#prod-detail .purchase-info input,
+#prod-detail .purchase-info .btn {
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+}
+#prod-detail .purchase-info input {
+  width: 60px;
+}
+#prod-detail .purchase-info .btn {
+  cursor: pointer;
+  color: #fff;
+}
+#prod-detail .purchase-info .btn:first-of-type {
+  background: #256eff;
+}
+#prod-detail .purchase-info .btn:last-of-type {
+  background: #f64749;
+}
+#prod-detail .purchase-info .btn:hover {
+  opacity: 0.9;
+}
+#prod-detail .social-links {
+  display: flex;
+  align-items: center;
+}
+#prod-detail .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #000;
+  border: 1px solid #000;
+  margin: 0 0.2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.5s ease;
+}
+#prod-detail .social-links a:hover {
+  background: #000;
+  border-color: transparent;
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  #prod-detail .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  #prod-detail .card-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #prod-detail .product-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #prod-detail .product-content {
+    padding-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

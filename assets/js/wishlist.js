@@ -1,9 +1,23 @@
 $(function () {
-    
-    
-
-
+   
+    let cartProducts = [];
+    if (JSON.parse(localStorage.getItem("cartProducts")) != undefined) {
+        cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+    }
   
+            localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+            getProductsCount(cartProducts);
+ 
+    function getProductsCount(arr) {
+        let cnt = 0;
+        for (const eachItem of arr) {
+            cnt += eachItem.count;
+            document.querySelector(".count-card").innerText = cnt;
+        }
+    }
+  
+
+
     let wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
     let tableBody = document.querySelector("tbody");
     let cartPart = document.querySelector("#cart-part")
@@ -18,16 +32,10 @@ $(function () {
             tableBody.innerHTML += `<tr 
             data-id="${wish.id}">
             <td class="image"><img src="${wish.image}" alt=""></td>
-            <td class="name">${wish.name}</td>
-            <td class="oneprice">${wish.price}</td>
-            <td class="stock">
-                <span>In Stock</span>
-            </td>
-            <td class="select">
-                <div class="choose">
-                    <a href="" class="addToCart"><i class="fa-solid fa-cart-plus"></i>add to cart</a>
-                </div>
-            </td>
+            <td class="name" style="color:#49b3ff;">${wish.name}</td>
+            <td class="oneprice " style="color:green;">${wish.price}</td>
+        
+          
             <td class="delete"><i class="fa-solid fa-x delete-all"></i></td>
         </tr>`;
             getWishlistCount(wishlisted);
@@ -65,12 +73,8 @@ $(function () {
         }
     }
 
-
-  
-
-
- 
+   
 
    
-  
+
 })

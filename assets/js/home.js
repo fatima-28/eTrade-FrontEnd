@@ -60,15 +60,6 @@ function openNav() {
     });
   }
 
-
-
-
-
-
-
-
-
-
   let addCartBtns = document.querySelectorAll(".basket-btn");
   let cartProducts = [];
   if (JSON.parse(localStorage.getItem("cartProducts")) != undefined) {
@@ -112,10 +103,10 @@ function openNav() {
       }
   }
 
-  //add to wishlsit with heart icon
+
   let addWishlistBtns = document.querySelectorAll(".heart");
   let wishlisted = [];
-  // let alertMessage = document.querySelector("#info-message .all")
+ 
 
   if (JSON.parse(localStorage.getItem("wishlisted")) != null) {
       wishlisted = JSON.parse(localStorage.getItem("wishlisted"));
@@ -125,6 +116,7 @@ function openNav() {
       getWishlistCount(wishlisted);
 
       let checkedID = addWishlist.parentNode.parentNode.getAttribute("data-id");
+      console.log(checkedID);
       let productInfo = wishlisted.find(m => m.id == checkedID);
       if (productInfo != undefined) {
           addWishlist.classList.remove("fa-regular");
@@ -171,6 +163,7 @@ function openNav() {
           getWishlistCount(wishlisted);
       });
   });
+
 
   function getWishlistCount(arr) {
       let cnt = 0;
